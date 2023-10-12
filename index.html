@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Arnaldo Muñoz" />
+    <title>Random</title>
+    <link rel="stylesheet" href="css/ramdom.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container d-flex flex-column justify-content-center vh-100">
+      <h2 class="text-center display-3 text-light">
+        Adivina el número generado
+      </h2>
+      <div class="buttons d-flex justify-content-between">
+        <button id="star" class="btn btn-danger btn-lg align-self-start mb-4">
+          Iniciar
+        </button>
+        <span class="text-begin text-warning fs-3 d-none"></span>
+        <button
+          id="show"
+          disabled
+          class="btn btn-primary btn-lg align-self-start mb-4"
+        >
+          Ver número
+        </button>
+      </div>
+
+      <span class="loader d-none"></span>
+      <div class="numbers-container mb-3">
+        <div class="number no-selected">7</div>
+        <div class="number no-selected">8</div>
+        <div class="number no-selected">9</div>
+        <div class="number no-selected">4</div>
+        <div class="number no-selected">5</div>
+        <div class="number no-selected">6</div>
+        <div class="number no-selected">1</div>
+        <div class="number no-selected">2</div>
+        <div class="number no-selected">3</div>
+      </div>
+      <h2>
+        <span class="badge bg-info align-self-start"></span>
+      </h2>
+      <div class="alertCustom d-none" role="alert">Debe iniciar el juego</div>
+    </div>
+    <script src="js/ramdom.js"></script>
+  </body>
+</html>
